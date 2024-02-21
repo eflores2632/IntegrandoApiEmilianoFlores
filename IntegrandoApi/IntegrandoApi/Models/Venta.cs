@@ -11,6 +11,7 @@
             this.Comentarios = comentarios;
             this.idUsuario = idUsuario;
         }
+        [JsonConstructorAttribute]
         public Venta(int id, string comentarios, int idUsuario)
         {
             this.id = id;

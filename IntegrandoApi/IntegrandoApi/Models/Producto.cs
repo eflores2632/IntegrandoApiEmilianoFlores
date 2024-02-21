@@ -17,6 +17,7 @@
             this.stock = stock;
             this.idUsuario = idUsuario;
         }
+        [JsonConstructorAttribute]
         public Producto(int id, string descripcion, decimal costo, decimal precioVenta, int stock, int idUsuario) : this(descripcion, costo, precioVenta, stock, idUsuario)
         {
             this.id = id;
